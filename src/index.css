@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base{
+    body{
+        @apply   max-w-full flex gap-2 justify-center box-border content-center justify-items-center items-center  min-h-screen bg-gradient-to-tr from-blue-900  to-[#020012] 
+
+    }
+}

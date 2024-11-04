@@ -1,5 +1,15 @@
+import { FormLayout, MainLayout } from "./components/Layouts";
+
 const App = () => {
-  return ( <></> );
+  return (
+       <>
+            <MainLayout>
+                  <FormLayout />
+                      
+                
+            </MainLayout>
+       </>
+  );
 }
  
 export default App;

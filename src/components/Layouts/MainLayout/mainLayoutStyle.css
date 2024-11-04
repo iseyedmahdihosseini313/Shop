@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components{
+    .mainLayout{
+        @apply    w-full flex m-2  justify-center content-center justify-items-center items-center overflow-hidden max-h-full 
+    }
+}
