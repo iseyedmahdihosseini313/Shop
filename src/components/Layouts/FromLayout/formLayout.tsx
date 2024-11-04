@@ -12,13 +12,14 @@ const FormLayout = () => {
           resolver: yupResolver(registerSchema),
      });
      return (
+     
           <form
                onSubmit={handleSubmit((data) => {
                     console.log(data);
                })}
                className="max-sm:min-w-full max-md:min-w-[60%] md:min-w-[25%]  max-sm:min-h-full max-md:min-h-[80%] md:min-h-[50%] flex flex-col m-2 p-2 gap-3 justify-center content-center justify-items-center items-center bg-white/5 backdrop-blur-xl outline-none rounded-sm ring-1 ring-cyan-900 py-10 px-4 shadow-sm shadow-neutral-100 "
           >
-               <Input
+             <Input
                     error={errors.firstName?.message}
                     register={register}
                     name="firstName"
