@@ -1,11 +1,18 @@
 import { memo, useState } from 'react';
 import IInput from './inputTypes';
 
-
-const Button = ({ label, error, icon, type, placeholder ,name,register}: IInput) => {
+const Button = ({
+     label,
+     error,
+     icon,
+     type,
+     placeholder,
+     name,
+     register,
+}: IInput) => {
      const [showPass, setShowPass] = useState(false);
      return (
-          <div className="flex flex-col  rounded-md w-full h-13 backdrop-blur-sm">
+          <div className="flex flex-col  rounded-md w-full h-[2.92rem] backdrop-blur-sm">
                {label && (
                     <label
                          className="text-gray-400 font-light pl-2 text-xs first-letter:text-lg first-letter:-tracking-widest tracking-tight"
