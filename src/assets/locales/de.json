@@ -1,0 +1,25 @@
+
+{
+    "submit": "Einreichen",
+    "signin": "Anmelden",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "forgotPassword": "Passwort vergessen?",
+    "signup": "Registrieren",
+    "enterEmail": "E-Mail eingeben",
+    "enterPassword": "Passwort eingeben",
+    "phoneNumber": "Telefonnummer",
+    "enterPhoneNumber": "Telefonnummer eingeben",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "enterFirstName": "Vorname eingeben",
+    "enterLastName": "Nachname eingeben",
+    "enterConfirmPassword": "Passwort bestätigen",
+    "confirmPassword": "Passwort bestätigen",
+    "username": "Benutzername",
+    "enterUsername": "Benutzername eingeben",
+    "Have an account": "Haben Sie ein Konto?",
+    "loginHere": "Hier anmelden",
+    "Don'tHaveAnAccount": "Sie haben noch kein Konto?",
+    "continue": "Weiter"
+}

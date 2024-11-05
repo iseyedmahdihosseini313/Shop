@@ -1,0 +1,25 @@
+
+{
+    "submit": "Soumettre",
+    "signin": "Se connecter",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "forgotPassword": "Mot de passe oublié?",
+    "signup": "S'inscrire",
+    "enterEmail": "Entrer l'e-mail",
+    "enterPassword": "Entrer le mot de passe",
+    "phoneNumber": "Numéro de téléphone",
+    "enterPhoneNumber": "Entrer le numéro de téléphone",
+    "firstName": "Prénom",
+    "lastName": "Nom de famille",
+    "enterFirstName": "Entrer le prénom",
+    "enterLastName": "Entrer le nom de famille",
+    "enterConfirmPassword": "Confirmer le mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "username": "Nom d'utilisateur",
+    "enterUsername": "Entrer le nom d'utilisateur",
+    "Have an account": "Vous avez un compte?",
+    "loginHere": "Connectez-vous ici",
+    "Don'tHaveAnAccount": "Vous n'avez pas de compte?",
+    "continue": "Continuer"
+}

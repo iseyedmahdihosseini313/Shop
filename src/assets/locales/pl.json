@@ -1,0 +1,25 @@
+
+{
+    "submit": "Zatwierdź",
+    "signin": "Zaloguj się",
+    "email": "Email",
+    "password": "Hasło",
+    "forgotPassword": "Zapomniałeś hasła?",
+    "signup": "Zarejestruj się",
+    "enterEmail": "Wprowadź email",
+    "enterPassword": "Wprowadź hasło",
+    "phoneNumber": "Numer telefonu",
+    "enterPhoneNumber": "Wprowadź numer telefonu",
+    "firstName": "Imię",
+    "lastName": "Nazwisko",
+    "enterFirstName": "Wprowadź imię",
+    "enterLastName": "Wprowadź nazwisko",
+    "enterConfirmPassword": "Potwierdź hasło",
+    "confirmPassword": "Potwierdź hasło",
+    "username": "Nazwa użytkownika",
+    "enterUsername": "Wprowadź nazwę użytkownika",
+    "Have an account": "Masz już konto?",
+    "loginHere": "Zaloguj się tutaj",
+    "Don'tHaveAnAccount": "Nie masz konta?",
+    "continue": "Kontynuuj"
+}
