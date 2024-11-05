@@ -21,7 +21,7 @@ const MainContext = ({ children }: { children: ReactNode }) => {
                data.settings = JSON.parse(settings);
           }
           setState(data);
-     }, [state]);
+     }, []);
      const isAuthenticated = () => !!state.user;
 
      const dispatch = (key: string, value: any, store = false) => {

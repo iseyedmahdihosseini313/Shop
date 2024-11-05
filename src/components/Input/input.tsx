@@ -21,8 +21,9 @@ const Button = ({ label, error, icon, type, placeholder ,name,register}: IInput)
                          </span>
                     )}
                     <input
+                         autoComplete="off"
                          {...register(name)}
-                         className="flex-1 hover:outline-none outline-none bg-transparent caret-cyan-300 placeholder:text-white/10 placeholder:font-thin placeholder:text-md placeholder:tracking-widest placeholder:hover:text-blue-400/55 pl-3 text-slate-200   text-sm font-extralight  "
+                         className=" flex-1 hover:outline-none outline-none bg-transparent  caret-cyan-300 placeholder:text-white/10 placeholder:font-thin placeholder:text-md placeholder:tracking-widest placeholder:hover:text-blue-400/55 pl-3 text-slate-200   text-sm font-extralight  "
                          id={label}
                          placeholder={placeholder}
                          type={
@@ -40,7 +41,7 @@ const Button = ({ label, error, icon, type, placeholder ,name,register}: IInput)
                          >
                               {showPass ? (
                                    <svg
-                                        className="w-5 h-6  stroke-gray-200"
+                                        className="w-5 h-6  stroke-gray-200 hover:stroke-gray-500"
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
                                         viewBox="-2 -2 24 24"
@@ -50,7 +51,7 @@ const Button = ({ label, error, icon, type, placeholder ,name,register}: IInput)
                                    </svg>
                               ) : (
                                    <svg
-                                        className="w-5 h-6  stroke-gray-200 "
+                                        className="w-5 h-6  stroke-gray-200 hover:stroke-gray-500"
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
                                         viewBox="-2 -2 24 24"
@@ -67,7 +68,9 @@ const Button = ({ label, error, icon, type, placeholder ,name,register}: IInput)
                     )}
                </div>
                {error && (
-                    <span className="text-red-500 ml-2 text-xs first-letter:uppercase first-letter:font-black first-letter:tracking-widest ">{error}</span>
+                    <span className="text-red-500 ml-2 text-xs first-letter:uppercase first-letter:font-black first-letter:tracking-widest font-normal">
+                         {error}
+                    </span>
                )}
           </div>
      );

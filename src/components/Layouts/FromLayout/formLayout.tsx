@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import registerSchema from '../../../models/registerSchema';
 import Input from '../../Input/input';
 import Button from '../../Button';
+import { Link } from 'react-router-dom';
 const FormLayout = () => {
      const {
           register,
@@ -12,14 +13,13 @@ const FormLayout = () => {
           resolver: yupResolver(registerSchema),
      });
      return (
-     
           <form
                onSubmit={handleSubmit((data) => {
                     console.log(data);
                })}
-               className="max-sm:min-w-full max-md:min-w-[60%] md:min-w-[25%]  max-sm:min-h-full max-md:min-h-[80%] md:min-h-[50%] flex flex-col m-2 p-2 gap-3 justify-center content-center justify-items-center items-center bg-white/5 backdrop-blur-xl outline-none rounded-sm ring-1 ring-cyan-900 py-10 px-4 shadow-sm shadow-neutral-100 "
+               className="max-sm:min-w-full max-md:min-w-[60%] md:min-w-[25%]  max-sm:min-h-full max-md:min-h-[80%] md:min-h-[50%] flex flex-col m-2 p-2 gap-3 justify-center content-center justify-items-center items-center bg-white/5 backdrop-blur-xl outline-none rounded-lg ring-1 ring-cyan-900 py-10 px-4 shadow-sm shadow-neutral-100 "
           >
-             <Input
+               <Input
                     error={errors.firstName?.message}
                     register={register}
                     name="firstName"
@@ -206,9 +206,18 @@ const FormLayout = () => {
                          </svg>
                     }
                />
+               <div className=" text-center">
+                    <span className="text-gray-500">Have an account? </span>
+                    <Link
+                         to="/login"
+                         className="text-blue-700 hover:text-blue-700 text-sm font-medium "
+                    >
+                         Login here
+                    </Link>
+               </div>
                <Button
                     value="Submit"
-                    className="bg-gradient-to-r from-blue-500/50 to-95%  backdrop:bg-white/5 backdrop-blur-sm font-thin text-md tracking-widest hover:tracking-wide  text-blue-200 ring-1 ring-blue-600 ring-offset-1 ring-offset-neutral-700  rounded w-20 h-9"
+                    className="mt-2 bg-gradient-to-r from-blue-500/50 to-95%  backdrop:bg-white/5 backdrop-blur-sm font-thin text-md tracking-widest hover:tracking-wide  text-blue-200 ring-1 ring-blue-600 ring-offset-1 ring-offset-neutral-700  rounded w-20 h-9"
                     type="submit"
                />
           </form>
