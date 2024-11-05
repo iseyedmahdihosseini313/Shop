@@ -1,0 +1,10 @@
+import de from '../de.json';
+import en from '../en.json';
+import it from '../it.json';
+import sv from '../sv.json';
+import ru from '../ru.json';
+import tr from '../tr.json';
+import pl from '../pl.json';
+import fr from '../fr.json';
+import es from '../es.json';
+export default { de, en, it, sv, ru, tr, pl, fr, es };
