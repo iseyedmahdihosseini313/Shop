@@ -12,5 +12,5 @@ export interface IState {
 }
 export interface ISettings {
      theme: 'dark' | 'light';
-     language: 'en' | 'fr';
+     language: 'en' | 'fr' | 'sv' | 'tr' | 'pl' | 'es' | 'de' | 'it' | 'ru';
 }

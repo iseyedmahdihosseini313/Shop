@@ -1,13 +1,14 @@
 import { createContext, ReactNode, useEffect, useState } from 'react';
 import { IContextOutProps, ISettings, IState } from './mainContext';
 import { IUser } from '../../types/user';
+import str from '../../helper/localization';
 
 export const context = createContext<IContextOutProps>({} as IContextOutProps);
 
 const MainContext = ({ children }: { children: ReactNode }) => {
      const [state, setState] = useState<IState>({
           user: {} as IUser,
-          settings: { language: 'en', theme: 'dark' } as ISettings,
+          settings: { language: "en", theme: 'dark' } as ISettings,
      } as IState);
 
      useEffect(() => {
@@ -21,7 +22,8 @@ const MainContext = ({ children }: { children: ReactNode }) => {
                data.settings = JSON.parse(settings);
           }
           setState(data);
-     }, []);
+          str.setLanguage(data.settings.language)
+     });
      const isAuthenticated = () => !!state.user;
 
      const dispatch = (key: string, value: any, store = false) => {

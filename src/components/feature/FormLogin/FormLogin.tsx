@@ -6,7 +6,7 @@ import Button from '../../Button';
 import { Link } from 'react-router-dom';
 import str from '../../../helper/localization';
 const FormLogin = () => {
-     const {DontHaveAnAccount,password,enterPassword,email,enterEmail,signin,forgotPassword}=str
+     const {DontHaveAnAccount,password,enterPassword,email,enterEmail,signin,signup,forgotPassword}=str
      const {
           register,
           handleSubmit,
@@ -101,13 +101,13 @@ const FormLogin = () => {
                               to="/register"
                               className="text-blue-400 hover:text-blue-800 pl-2 "
                          >
-                             {signin}
+                             {signup}
                          </Link>
                     </div>
                </div>
 
                <Button
-                    value="SignIn"
+                    value={signin}
                     className="bg-gradient-to-r from-blue-500/50 to-95%  backdrop:bg-white/5 backdrop-blur-sm font-thin  text-md tracking-widest hover:tracking-wide  text-blue-200 ring-1 ring-blue-600 ring-offset-1 ring-offset-neutral-700  rounded w-20 h-9"
                     type="submit"
                />
