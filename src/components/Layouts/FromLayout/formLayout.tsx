@@ -4,7 +4,27 @@ import registerSchema from '../../../models/registerSchema';
 import Input from '../../Input/input';
 import Button from '../../Button';
 import { Link } from 'react-router-dom';
+import str from '../../../helper/localization';
 const FormLayout = () => {
+     const {
+          HaveAnAccount,
+          confirmPassword,
+          email,
+          enterConfirmPassword,
+          firstName,
+          loginHere,
+          enterFirstName,
+          lastName,
+          enterLastName,
+          username,
+          enterUsername,
+          password,
+          enterPhoneNumber,
+          enterEmail,
+          enterPassword,
+          phoneNumber,
+          submit,
+     } = str;
      const {
           register,
           handleSubmit,
@@ -24,8 +44,8 @@ const FormLayout = () => {
                     register={register}
                     name="firstName"
                     type="text"
-                    label="First Name"
-                    placeholder="Fistname"
+                    label={firstName}
+                    placeholder={enterFirstName}
                     icon={
                          <svg
                               className="w-5 h-5  "
@@ -46,8 +66,8 @@ const FormLayout = () => {
                     register={register}
                     name="lastName"
                     type="text"
-                    label="Larst Name"
-                    placeholder="Lastname"
+                    label={lastName}
+                    placeholder={enterLastName}
                     icon={
                          <svg
                               className="w-5 h-5 "
@@ -68,8 +88,8 @@ const FormLayout = () => {
                     register={register}
                     name="username"
                     type="text"
-                    label="Username"
-                    placeholder="Username"
+                    label={username}
+                    placeholder={enterUsername}
                     icon={
                          <svg
                               className="w-7 h-4  "
@@ -96,8 +116,8 @@ const FormLayout = () => {
                     register={register}
                     name="email"
                     type="text"
-                    label="Email"
-                    placeholder="Email"
+                    label={email}
+                    placeholder={enterEmail}
                     icon={
                          <svg
                               viewBox="-2 -2 20 24"
@@ -133,8 +153,8 @@ const FormLayout = () => {
                     register={register}
                     name="phoneNumber"
                     type="text"
-                    label="PhoneNumber"
-                    placeholder="PhoneNumber"
+                    label={phoneNumber}
+                    placeholder={enterPhoneNumber}
                     icon={
                          <svg
                               className="w-5 h-4  "
@@ -155,12 +175,12 @@ const FormLayout = () => {
                     }
                />
                <Input
-                    placeholder="Password"
                     error={errors.password?.message}
                     register={register}
                     name="password"
                     type="password"
-                    label="Password"
+                    label={password}
+                    placeholder={enterPassword}
                     icon={
                          <svg
                               className="w-5 h-5"
@@ -181,12 +201,12 @@ const FormLayout = () => {
                     }
                />
                <Input
-                    placeholder="Confirm Password"
                     error={errors.confirmPassword?.message}
                     register={register}
                     name="confirmPassword"
                     type="password"
-                    label="Confirm Password"
+                    label={confirmPassword}
+                    placeholder={enterConfirmPassword}
                     icon={
                          <svg
                               className="w-5 h-5"
@@ -207,16 +227,16 @@ const FormLayout = () => {
                     }
                />
                <div className=" text-center">
-                    <span className="text-gray-500">Have an account? </span>
+                    <span className="text-gray-500">{HaveAnAccount} </span>
                     <Link
                          to="/login"
                          className="text-blue-700 hover:text-blue-700 text-sm font-medium "
                     >
-                         Login here
+                         {loginHere}
                     </Link>
                </div>
                <Button
-                    value="Submit"
+                    value={submit}
                     className="mt-2 mx-16 bg-gradient-to-r from-blue-500/50 to-95%  backdrop:bg-white/5 backdrop-blur-sm font-thin text-md tracking-widest hover:tracking-wide  text-blue-200 ring-1 ring-blue-600 ring-offset-1 ring-offset-neutral-700  rounded w-20 h-9"
                     type="submit"
                />

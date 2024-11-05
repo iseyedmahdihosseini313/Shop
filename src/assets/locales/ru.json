@@ -17,7 +17,7 @@
      "confirmPassword": "Подтверждение пароля",
      "username": "Имя пользователя",
      "enterUsername": "Введите имя пользователя",
-     "Have an account": "Уже есть аккаунт?",
+     "HaveAnAccount": "Уже есть аккаунт?",
      "loginHere": "Войти здесь",
      "DontHaveAnAccount": "Нет аккаунта?",
      "continue": "Продолжить"
