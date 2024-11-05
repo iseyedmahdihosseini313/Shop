@@ -17,9 +17,9 @@
     "confirmPassword": "Confirm Password",
     "username": "Username",
     "enterUsername": "Enter Username",
-    "Have an account":"Have an account?",
+    "HaveAnAccount":"Have an account?",
     "loginHere":"Login Here",
-    "Don'tHaveAnAccount":"Don't have an account?",
+    "DontHaveAnAccount":"Don't have an account?",
     "continue":"Continue"
     
 

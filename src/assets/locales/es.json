@@ -17,8 +17,8 @@
      "confirmPassword": "Confirmar contraseña",
      "username": "Nombre de usuario",
      "enterUsername": "Ingrese nombre de usuario",
-     "Have an account": "¿Ya tienes una cuenta?",
+     "HaveAnAccount": "¿Ya tienes una cuenta?",
      "loginHere": "Inicia sesión aquí",
-     "Don'tHaveAnAccount": "¿No tienes una cuenta?",
+     "DontHaveAnAccount": "¿No tienes una cuenta?",
      "continue": "Continuar"
 }
