@@ -4,7 +4,9 @@ import loginSchema from '../../../models/loginSchema';
 import Input from '../../Input/input';
 import Button from '../../Button';
 import { Link } from 'react-router-dom';
+import str from '../../../helper/localization';
 const FormLogin = () => {
+     const {DontHaveAnAccount,password,enterPassword,email,enterEmail,signin,forgotPassword}=str
      const {
           register,
           handleSubmit,
@@ -24,8 +26,8 @@ const FormLogin = () => {
                     register={register}
                     name="email"
                     type="text"
-                    label="Email"
-                    placeholder="Email"
+                    label={email}
+                    placeholder={enterEmail}
                     icon={
                          <svg
                               viewBox="-2 -2 20 24"
@@ -56,12 +58,12 @@ const FormLogin = () => {
                     }
                />
                <Input
-                    placeholder="Password"
                     error={errors.password?.message}
                     register={register}
                     name="password"
                     type="password"
-                    label="Password"
+                    label={password}
+                    placeholder={enterPassword}
                     icon={
                          <svg
                               className="w-5 h-5"
@@ -84,7 +86,7 @@ const FormLogin = () => {
                <div className=" flex flex-col text-center">
                     <div className="text-sm self-start">
                          <span className="text-gray-500">
-                              Don't have an account?{' '}
+                             {DontHaveAnAccount}{' '}
                          </span>
                     </div>
 
@@ -93,13 +95,13 @@ const FormLogin = () => {
                               to="/forgotPassword"
                               className="text-blue-600 hover:text-blue-800 font-extralight"
                          >
-                              Forgot your password
+                              {forgotPassword}
                          </Link>
                          <Link
                               to="/register"
                               className="text-blue-400 hover:text-blue-800 pl-2 "
                          >
-                              Sign up
+                             {signin}
                          </Link>
                     </div>
                </div>
